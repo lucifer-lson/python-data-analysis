@@ -137,26 +137,26 @@ class MusicPlotter(Plotter):
 
 if __name__ == "__main__":
 
-    # # 测试PointPlotter
-    # # p1, p2, p3, p4, p5, p6 = Point(1,2), Point(3,9), Point(2,4), Point(1,7), Point(9,4), Point(3,3)
-    # # p_list = [p1, p2, p3, p4, p5, p6]
-    # # test1 = PointPlotter()
-    # # test1.plot(p_list)
-    #
-    # # 测试ArrayPlotter
-    # array1 = [[1, 3, 8, 5, 2], [4, 5, 2, 7, 9]]
-    # array2 = [[1, 3, 8, 5, 2], [4, 5, 2, 7, 9], [3, 1, 5, 2, 1]]
-    # test2 = ArrayPlotter()
-    # test2.plot(array1)
-    # test2.plot(array2)
+    # 测试PointPlotter
+    p1, p2, p3, p4, p5, p6 = Point(1,2), Point(3,9), Point(2,4), Point(1,7), Point(9,4), Point(3,3)
+    p_list = [p1, p2, p3, p4, p5, p6]
+    test1 = PointPlotter()
+    test1.plot(p_list)
+    
+    # 测试ArrayPlotter
+    array1 = [[1, 3, 8, 5, 2], [4, 5, 2, 7, 9]]
+    array2 = [[1, 3, 8, 5, 2], [4, 5, 2, 7, 9], [3, 1, 5, 2, 1]]
+    test2 = ArrayPlotter()
+    test2.plot(array1)
+    test2.plot(array2)
 
     # 测试TextPlotter
-    # test3 = TextPlotter()
-    # test3.plot('passage.txt')
+    test3 = TextPlotter()
+    test3.plot('passage.txt')
 
     # 测试ImagePlotter
-    # test4 = ImagePlotter((2, 3))
-    # test4.plot(['0001.jpg', '0002.jpg', '0003.jpg', '0004.jpg', '0005.jpg', '0006.jpg'])
+    test4 = ImagePlotter((2, 3))
+    test4.plot(['0001.jpg', '0002.jpg', '0003.jpg', '0004.jpg', '0005.jpg', '0006.jpg'])
 
     # 测试MusicPlotter
     test5 = MusicPlotter()
