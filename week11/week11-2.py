@@ -18,11 +18,6 @@ def calculate_music(q1, q2, path):
         # 求声强
         sdb = librosa.amplitude_to_db(librosa.feature.rms(y=y), ref=0.00002)
         q2.put((mus, pitch, sdb))
-        # with open('result.txt', 'ab') as f:
-        #     f.write(mus+'\npitch:\n')
-        #     np.savetxt(f, pitch, delimiter=',')
-        #     f.write('\nsdb:\n')
-        #     np.savetxt(f, sdb, delimiter=',')
         print(f'{mus} has been loaded and calculated by {os.getpid()}.')
 
 
