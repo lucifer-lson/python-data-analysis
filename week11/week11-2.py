@@ -61,5 +61,4 @@ if __name__ == "__main__":
     q1.put(None)
     for p in p2_list:
         p.join()
-    end = time.time()
 
